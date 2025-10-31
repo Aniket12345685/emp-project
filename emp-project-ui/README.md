@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 🧑‍💼 Employee Management System (Spring Boot)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple **Employee Management System** built using **Spring Boot**, **Spring Data JPA**, and **MySQL**.  
+This project provides REST APIs for performing CRUD (Create, Read, Update, Delete) operations on Employee data.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- Add a new employee  
+- View all employees  
+- Update existing employee details  
+- Delete an employee  
+- Cross-Origin support for React frontend (`http://localhost:3000`)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Tech Stack
 
-### `npm test`
+| Layer | Technology |
+|--------|-------------|
+| Backend | Spring Boot (Java) |
+| Database | MySQL |
+| ORM | Spring Data JPA / Hibernate |
+| Build Tool | Maven |
+| Frontend  | React.js |
+| IDE  | VS Code |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧠 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+emp-project/
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/emp_project/
+│ │ │ ├── controller/EmpController.java
+│ │ │ ├── entity/Employee.java
+│ │ │ ├── repository/EmployeeRepository.java
+│ │ │ ├── service/EmployeeService.java
+│ │ │ └── service/EmployeeServiceImpl.java
+│ │ └── resources/
+│ │     └── application.properties
+│ └── test/
+├── pom.xml
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ API Endpoints
 
-### `npm run eject`
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| **GET** | `/api/employees` | Get all employees |
+| **POST** | `/api/employees` | Create new employee |
+| **PUT** | `/api/employees/{id}` | Update employee by ID |
+| **DELETE** | `/api/employees/{id}` | Delete employee by ID |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚡ Running the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🧩 1️⃣ Setup MySQL
+Create a database named `employee_db` (or your preferred name).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 🧩 2️⃣ Configure `application.properties`
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+🧩 3️⃣ Run the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Run the Spring Boot application
+# Run from your IDE the main class EmpProjectApplication.java
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application will run at: http://localhost:9098
