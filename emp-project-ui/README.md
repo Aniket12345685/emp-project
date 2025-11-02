@@ -14,6 +14,20 @@ This project provides REST APIs for performing CRUD (Create, Read, Update, Delet
 - Cross-Origin support for React frontend (`http://localhost:3000`)
 
 ---
+## 🖼️ Screenshots
+
+### 1️⃣ Frontend - Employee Management Dashboard
+![Frontend Screenshot](./screenshots/frontend.png)
+
+### 2️⃣ Backend - API Testing (Spring Boot)
+
+#### ➤ GET - Fetch All Employees
+![GET Screenshot](./screenshots/backend-get.png)
+
+#### ➤ POST - Add New Employee
+![POST Screenshot](./screenshots/backend-post.png)
+
+---
 
 ## 🧰 Tech Stack
 
