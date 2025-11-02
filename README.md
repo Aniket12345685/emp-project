@@ -17,15 +17,15 @@ This project provides REST APIs for performing CRUD (Create, Read, Update, Delet
 ## 🖼️ Screenshots
 
 ### 1️⃣ Frontend - Employee Management Dashboard
-![Frontend Screenshot](./screenshots/frontend.png)
+![Frontend Screenshot](./emp-project-ui/screenshots/frontend.png)
 
 ### 2️⃣ Backend - API Testing (Spring Boot)
 
 #### ➤ GET - Fetch All Employees
-![GET Screenshot](./screenshots/backend-get.png)
+![GET Screenshot](./emp-project-ui/screenshots/backend-get.png)
 
 #### ➤ POST - Add New Employee
-![POST Screenshot](./screenshots/backend-post.png)
+![POST Screenshot](./emp-project-ui/screenshots/backend-post.png)
 
 ---
 
