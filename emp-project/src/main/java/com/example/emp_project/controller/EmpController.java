@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3001")
 
 @RestController
 @RequestMapping("/api")
